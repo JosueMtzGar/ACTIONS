@@ -13,5 +13,8 @@ jobs:
             - name: Revisar el repo
               uses: actions/checkout@v2
 
+            - name: Install pandas
+              run: pip install pandas
+
             - name: Ejecutar codigo de pthon
               run: python3 app.py 
